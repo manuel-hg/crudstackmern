@@ -18,9 +18,6 @@ export default () => {
                             <li class="nav-item">
                                 <a class="nav-link" href="/agregar">Agregar</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/editar">Editar</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -38,7 +35,7 @@ export default () => {
                         element={<AgregarUsuario />}
                     />
                     <Route
-                        path="/editar"
+                        path="/editar/:idUsuario"
                         element={<EditarUsuario />}
                     />
                 </Routes>
